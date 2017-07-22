@@ -5,12 +5,19 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'cv',
   data () {
     return {
 
     }
+  },
+  mounted () {
+    axios.get('static/json/cv-data.json')
+      .then(function (response) {
+        console.log(response.data)
+      })
   }
 }
 </script>
