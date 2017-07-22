@@ -5,6 +5,8 @@
   "author": "Ricardo van der Heijden <ricardovdheijden@hotmail.com>",
   "private": true,
   "scripts": {
+    "serve": "node build/dev-server.js",
+    "s": "node build/dev-server.js",
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
