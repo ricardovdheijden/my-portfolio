@@ -1,6 +1,16 @@
 <template>
   <div class="cv">
-    Hello CV
+    <h2>Profile</h2>
+    <p>{{cvData.profile}}</p>
+
+    <h2>Work Experience</h2>
+
+    <h2>Education</h2>
+    <p v-for="education in cvData.education">
+      <strong>{{education.degree}} {{education.fieldOfStudy}}, {{education.school}}</strong><br />
+      {{education.city}}, {{education.country}} - {{education.startYear}}-{{education.endYear}}
+    </p>
+
   </div>
 </template>
 
@@ -10,13 +20,14 @@ export default {
   name: 'cv',
   data () {
     return {
-
+      cvData: {}
     }
   },
   mounted () {
+    let self = this
     axios.get('static/json/cv-data.json')
       .then(function (response) {
-        console.log(response.data)
+        self.cvData = response.data
       })
   }
 }
