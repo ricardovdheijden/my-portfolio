@@ -1,0 +1,34 @@
+{
+  "profile": "text",
+  "workExperience": [],
+  "education": [
+    {
+      "school": "Eindhoven University of Technology",
+      "fieldOfStudy": "Human Technology Interaction",
+      "degree": "MSc.",
+      "country": "The Netherlands",
+      "city": "Eindhoven",
+      "startYear": 2008,
+      "endYear": 2011
+    }, {
+      "school": "National University of Singapore",
+      "fieldOfStudy": "",
+      "degree": "Exchange Programme",
+      "country": "Singapore",
+      "city": "",
+      "startYear": 2010,
+      "endYear": 2011
+    }, {
+      "school": "Avans University",
+      "fieldOfStudy": "Electrical Engineering",
+      "degree": "BSc.",
+      "country": "The Netherlands",
+      "city": "Breda",
+      "startYear": 2004,
+      "endYear": 2008
+    }
+  ],
+  "certifications": [],
+  "skills": [],
+  "interestsHobbies": []
+}
