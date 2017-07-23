@@ -1,5 +1,5 @@
 <template>
-  <div class="cv">
+  <div class="cv container">
     <h2>Profile</h2>
     <p>{{cvData.profile}}</p>
 

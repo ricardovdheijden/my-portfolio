@@ -13,7 +13,5 @@ export default {
 </script>
 
 <style>
-#app {
-
-}
+@import '../node_modules/bootstrap/dist/css/bootstrap.css'
 </style>
