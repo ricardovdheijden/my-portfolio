@@ -1,6 +1,75 @@
 {
+  "version": {
+    "day": 7,
+    "month": 7,
+    "year": 2017
+  },
   "profile": "IT professional with five years of front-end development experience, strong communication skills, and a keen interest to work with new technologies to achieve the most user-friendly and effective IT solutions.",
-  "workExperience": [],
+  "workExperience": [
+    {
+      "company": "De Volksbank (via Capgemini Nederland)",
+      "title": "Developer",
+      "startYear": 2017,
+      "startMonth": 5,
+      "endYear": 0,
+      "endMonth": 0,
+      "summary": [
+        "Develops the front-end and the Java RESTful services of the internet banking and insurance applications for all four De Volksbank brands"
+      ]
+    }, {
+      "company": "Sportinnovator (via Capgemini Nederland)",
+      "title": "Front-end Developer",
+      "startYear": 2017,
+      "startMonth": 3,
+      "endYear": 2017,
+      "endMonth": 5,
+      "summary": [
+        "Developed the front-end functionalities for a portal created for national athletes to keep track of their performance results from data retrieved via sensors during training"
+      ]
+    }, {
+      "company": "ABN AMRO Nederland Channel Solutions (via Capgemini Nederland)",
+      "title": "Front-end Developer",
+      "startYear": 2016,
+      "startMonth": 3,
+      "endYear": 2017,
+      "endMonth": 3,
+      "summary": [
+        "Developed front-end functionalities for both existing internet banking applications and internet banking website as part of a global SCRUM team"
+      ]
+    }, {
+      "company": "ABN AMRO Nederland Channel Solutions (via Capgemini Nederland)",
+      "title": "Application Maintenance (Incidents, Problems and Release Management)",
+      "startYear": 2012,
+      "startMonth": 6,
+      "endYear": 2016,
+      "endMonth": 3,
+      "summary": [
+        "Maintained front-end applications of SCRUM teams on the production environment and other environments, including internet banking and the bank’s various websites",
+        "Provided support for several development environments, including content management system Tridion and associated products"
+      ]
+    }, {
+      "company": "ABN AMRO Nederland Channel Solutions (via Capgemini Nederland)",
+      "title": "Front-end Developer",
+      "startYear": 2012,
+      "startMonth": 2,
+      "endYear": 2012,
+      "endMonth": 6,
+      "summary": [
+        "Added front-end functionalities to ABN AMRO public and intranet websites as part of SCRUM team"
+      ]
+    }, {
+      "company": "ING Group Corporate IT (via Capgemini Nederland)",
+      "title": "Tester",
+      "startYear": 2011,
+      "startMonth": 12,
+      "endYear": 2012,
+      "endMonth": 2,
+      "summary": [
+        "Built a proof of concept for enabling offshore teams located in India to perform testing activities",
+        "Revised existing test scripts for improved efficiency"
+      ]
+    }
+  ],
   "education": [
     {
       "school": "Eindhoven University of Technology",
@@ -12,8 +81,8 @@
       "endYear": 2011
     }, {
       "school": "National University of Singapore",
-      "fieldOfStudy": "",
-      "degree": "Exchange Programme",
+      "fieldOfStudy": "Exchange Programme",
+      "degree": "",
       "country": "Singapore",
       "city": "",
       "startYear": 2010,
@@ -28,7 +97,23 @@
       "endYear": 2008
     }
   ],
-  "certifications": [],
-  "skills": [],
-  "interestsHobbies": []
+  "certificationsSkills": [
+    "Oracle Certified Associate Java SE 7 Programmer and C# (Dot NET)",
+    "HTML5, CSS3, Sass, JavaScript and TypeScript",
+    "Angular.js, Bootstrap, React, Ember and jQuery",
+    "Node.js, Express.js, PHP, MongoDB, SQL and working with RESTful services",
+    "Testing frameworks Jasmine and Protractor",
+    "Content Management Systems including Tridion and Backbase",
+    "GIT and SVN repositories",
+    "Familiar with package managers Maven and NPM",
+    "Experienced in working in Agile SCRUM teams",
+    "Fluent in Dutch and English"
+  ],
+  "interestsHobbies": [
+    "Interested in all things IT",
+    "Software: developing in C#, building web applications using Node.js, and experimenting with game development in Unity 5",
+    "Hardware: recently built and configured own server to use as playground for side projects",
+    "Avid traveller since visiting several cities across Southeast Asia during student exchange programme in Singapore",
+    "Disk jockey (DJ) enthusiast and big fan of music and dance festivals"
+  ]
 }
