@@ -1,42 +1,48 @@
 <template>
-  <div class="cv container">
-    <h2>Profile</h2>
-    <p>{{cvData.profile}}</p>
+  <div class="cv">
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Profile</h2>
+        <p>{{cvData.profile}}</p>
+      </div>
+    </div>
 
-    <h2>Work Experience</h2>
-    <p v-for="work in cvData.workExperience">
-      <strong>
-        {{work.title}}, {{work.company}} -
-        {{monthName(work.startMonth)}} {{work.startYear}}-<span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span>
-      </strong>
-      <br />
+    <div class="container">
+      <h2>Work Experience</h2>
+      <p v-for="work in cvData.workExperience">
+        <strong>
+          {{work.title}}, {{work.company}} -
+          {{monthName(work.startMonth)}} {{work.startYear}}-<span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span>
+        </strong>
+        <br />
       <ul v-for="summaryLine in work.summary">
         <li>{{summaryLine}}</li>
       </ul>
-    </p>
+      </p>
 
-    <h2>Education</h2>
-    <p v-for="education in cvData.education">
-      <strong>
-        <span v-if="education.degree">{{education.degree}} </span>
-        <span v-if="education.fieldOfStudy">{{education.fieldOfStudy}}, </span>
-        <span v-if="education.school"></span>{{education.school}}
-      </strong>
-      <br />
-      <span v-if="education.city">{{education.city}}, </span>
-      {{education.country}} -
-      {{education.startYear}}-<span v-if="education.endYear">{{education.endYear}}</span><span v-else>Present</span>
-    </p>
+      <h2>Education</h2>
+      <p v-for="education in cvData.education">
+        <strong>
+          <span v-if="education.degree">{{education.degree}} </span>
+          <span v-if="education.fieldOfStudy">{{education.fieldOfStudy}}, </span>
+          <span v-if="education.school"></span>{{education.school}}
+        </strong>
+        <br />
+        <span v-if="education.city">{{education.city}}, </span>
+        {{education.country}} -
+        {{education.startYear}}-<span v-if="education.endYear">{{education.endYear}}</span><span v-else>Present</span>
+      </p>
 
-    <h2>Certification & Skills</h2>
-    <ul v-for="certificationSkill in cvData.certificationsSkills">
-      <li>{{certificationSkill}}</li>
-    </ul>
+      <h2>Certification & Skills</h2>
+      <ul v-for="certificationSkill in cvData.certificationsSkills">
+        <li>{{certificationSkill}}</li>
+      </ul>
 
-    <h2>Interests & Hobbies</h2>
+      <h2>Interests & Hobbies</h2>
       <div v-for="interestHobby in cvData.interestsHobbies">
         <span>{{interestHobby}}</span><br />
       </div>
+    </div>
 
   </div>
 </template>
@@ -81,5 +87,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .jumbotron {
+    background-image: url('../assets/javascript.jpg');
+    /*background-position: center;*/
+    background-position: bottom;
+  }
+
+  .jumbotron > .container {
+    color: white;
+  }
+
+  .cv {
+    background-color: lightgray;
+  }
 
 </style>
