@@ -12,8 +12,8 @@
       <h2>Work Experience</h2>
       <div v-for="work in cvData.workExperience" class="work row">
         <div class="row col-md-3">
-          <span class="col-md-12 col-xs-6"><strong>{{work.company}}</strong></span>
-          <span class="col-md-12 col-xs-6 text-right"><em>{{work.title}}</em></span>
+          <span class="col-md-12 col-xs-5"><strong>{{work.company}}</strong></span>
+          <span class="col-md-12 col-xs-7 text-right"><em>{{work.title}}</em></span>
           <span class="col-md-12 col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
         </div>
         <div>
