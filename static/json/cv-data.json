@@ -13,7 +13,7 @@
   "profile": "IT professional with five years of front-end development experience, strong communication skills, and a keen interest to work with new technologies to achieve the most user-friendly and effective IT solutions.",
   "workExperience": [
     {
-      "company": "De Volksbank (via Capgemini Nederland)",
+      "company": "De Volksbank",
       "title": "Developer",
       "startYear": 2017,
       "startMonth": 5,
@@ -23,7 +23,7 @@
         "Develops the front-end and the Java RESTful services of the internet banking and insurance applications for all four De Volksbank brands"
       ]
     }, {
-      "company": "Sportinnovator (via Capgemini Nederland)",
+      "company": "Sportinnovator",
       "title": "Front-end Developer",
       "startYear": 2017,
       "startMonth": 3,
@@ -33,7 +33,7 @@
         "Developed the front-end functionalities for a portal created for national athletes to keep track of their performance results from data retrieved via sensors during training"
       ]
     }, {
-      "company": "ABN AMRO Nederland Channel Solutions (via Capgemini Nederland)",
+      "company": "ABN AMRO Bank",
       "title": "Front-end Developer",
       "startYear": 2016,
       "startMonth": 3,
@@ -43,8 +43,8 @@
         "Developed front-end functionalities for both existing internet banking applications and internet banking website as part of a global SCRUM team"
       ]
     }, {
-      "company": "ABN AMRO Nederland Channel Solutions (via Capgemini Nederland)",
-      "title": "Application Maintenance (Incidents, Problems and Release Management)",
+      "company": "ABN AMRO Bank",
+      "title": "Application Maintenance",
       "startYear": 2012,
       "startMonth": 6,
       "endYear": 2016,
@@ -54,7 +54,7 @@
         "Provided support for several development environments, including content management system Tridion and associated products"
       ]
     }, {
-      "company": "ABN AMRO Nederland Channel Solutions (via Capgemini Nederland)",
+      "company": "ABN AMRO Bank",
       "title": "Front-end Developer",
       "startYear": 2012,
       "startMonth": 2,
@@ -64,7 +64,7 @@
         "Added front-end functionalities to ABN AMRO public and intranet websites as part of SCRUM team"
       ]
     }, {
-      "company": "ING Group Corporate IT (via Capgemini Nederland)",
+      "company": "ING",
       "title": "Tester",
       "startYear": 2011,
       "startMonth": 12,

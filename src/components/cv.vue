@@ -10,16 +10,30 @@
 
     <div class="container">
       <h2>Work Experience</h2>
-      <p v-for="work in cvData.workExperience">
-        <strong>
-          {{work.title}}, {{work.company}} -
-          {{monthName(work.startMonth)}} {{work.startYear}}-<span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span>
-        </strong>
-        <br />
-      <ul v-for="summaryLine in work.summary">
-        <li>{{summaryLine}}</li>
-      </ul>
-      </p>
+      <div v-for="work in cvData.workExperience" class="work row">
+        <div class="row col-md-3">
+          <span class="col-md-12 col-xs-6"><strong>{{work.company}}</strong></span>
+          <span class="col-md-12 col-xs-6 text-right"><em>{{work.title}}</em></span>
+          <span class="col-md-12 col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
+        </div>
+        <div>
+          <ul v-for="summaryLine in work.summary">
+            <li>{{summaryLine}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--<h2>Work Experience</h2>-->
+      <!--<p v-for="work in cvData.workExperience">-->
+        <!--<strong>-->
+          <!--{{work.title}}, {{work.company}} - -->
+          <!--{{monthName(work.startMonth)}} {{work.startYear}}-<span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span>-->
+        <!--</strong>-->
+        <!--<br />-->
+      <!--<ul v-for="summaryLine in work.summary">-->
+        <!--<li>{{summaryLine}}</li>-->
+      <!--</ul>-->
+      <!--</p>-->
 
       <h2>Education</h2>
       <p v-for="education in cvData.education">
@@ -103,6 +117,18 @@ export default {
 
   .cv {
     /*background-color: lightgray;*/
+  }
+
+  .work.row {
+    margin-bottom: 10px;
+  }
+
+  .work.row ul {
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: 767px) {
+    .work .text-right { text-align:left }
   }
 
 </style>
