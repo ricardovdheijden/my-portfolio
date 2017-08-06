@@ -2,7 +2,8 @@
   <div class="cv">
     <div class="jumbotron">
       <div class="container">
-        <h2>Profile</h2>
+        <h1>{{cvData.personal.name}}</h1>
+        <h2>{{cvData.personal.role}} | {{cvData.personal.residence}} | Linkedin</h2>
         <p>{{cvData.profile}}</p>
       </div>
     </div>
@@ -88,9 +89,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .jumbotron {
-    background-image: url('../assets/javascript.jpg');
+    background-image: url('../assets/macbook.jpg');
     /*background-position: center;*/
-    background-position: bottom;
+    /*background-position: top;*/
+    background-repeat: no-repeat;
+    min-height: 350px;
+   background-size: cover;
   }
 
   .jumbotron > .container {
@@ -98,7 +102,7 @@ export default {
   }
 
   .cv {
-    background-color: lightgray;
+    /*background-color: lightgray;*/
   }
 
 </style>
