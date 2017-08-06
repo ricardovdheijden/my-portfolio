@@ -10,7 +10,7 @@
 
     <div class="container">
       <h2>Work Experience</h2>
-      <div v-for="work in cvData.workExperience" class="work row">
+      <div v-for="work in cvData.workExperience" class="container work row">
         <div class="row col-md-3">
           <span class="col-md-12 col-xs-5"><strong>{{work.company}}</strong></span>
           <span class="col-md-12 col-xs-7 text-right"><em>{{work.title}}</em></span>
