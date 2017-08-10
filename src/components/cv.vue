@@ -3,7 +3,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>{{cvData.personal.name}}</h1>
-        <h2>{{cvData.personal.role}} | {{cvData.personal.residence}} | Linkedin</h2>
+        <h2>{{cvData.personal.role}} | {{cvData.personal.residence}}</h2>
         <p>{{cvData.profile}}</p>
       </div>
     </div>
@@ -11,12 +11,15 @@
     <div class="container">
       <h2>Work Experience</h2>
       <div v-for="work in cvData.workExperience" class="container work row">
-        <div class="row col-md-3">
-          <span class="col-md-12 col-xs-5"><strong>{{work.company}}</strong></span>
-          <span class="col-md-12 col-xs-7 text-right"><em>{{work.title}}</em></span>
-          <span class="col-md-12 col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
+        <div class="row col-sm-1">
+          <img class="logo" :src="work.logo">
         </div>
-        <div>
+        <div class="row col-sm-4 col-md-3">
+          <span class="col-xs-5 col-sm-12"><strong>{{work.company}}</strong></span>
+          <span class="col-xs-7 col-sm-12 text-right"><em>{{work.title}}</em></span>
+          <span class="col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
+        </div>
+        <div class="col-sm-7 col-md-8">
           <ul v-for="summaryLine in work.summary">
             <li>{{summaryLine}}</li>
           </ul>
@@ -81,18 +84,18 @@ export default {
   methods: {
     monthName: function (value) {
       switch (value) {
-        case 1: return 'January'
-        case 2: return 'February'
-        case 3: return 'March'
-        case 4: return 'April'
+        case 1: return 'Jan'
+        case 2: return 'Feb'
+        case 3: return 'Mar'
+        case 4: return 'Apr'
         case 5: return 'May'
         case 6: return 'June'
         case 7: return 'July'
-        case 8: return 'August'
-        case 9: return 'September'
-        case 10: return 'October'
-        case 11: return 'November'
-        case 12: return 'December'
+        case 8: return 'Aug'
+        case 9: return 'Sept'
+        case 10: return 'Oct'
+        case 11: return 'Nov'
+        case 12: return 'Dec'
         default: return ''
       }
     }
@@ -120,15 +123,44 @@ export default {
   }
 
   .work.row {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .work.row ul {
     margin-bottom: 0px;
   }
 
-  @media (min-width: 767px) {
-    .work .text-right { text-align:left }
+  /* Bootstrap grid adjustments */
+  /* col-xs only */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    img.logo {
+      display: none;
+    }
   }
 
+  /* col-sm and up */
+  @media (min-width: 768px) {
+    img.logo {
+      margin-top: 3px;
+      width: 35px;
+      height: 35px;
+    }
+    .work .text-right {
+      text-align:left;
+    }
+  }
+
+  /* col-md and up */
+  @media (min-width: 992px) {
+    img.logo {
+      width: 50px;
+      height: 50px;
+    }
+  }
 </style>
