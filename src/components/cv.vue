@@ -146,7 +146,7 @@ export default {
   /* col-sm and up */
   @media (min-width: 768px) {
     img.logo {
-      margin-top: 3px;
+      margin-top: 5px;
       width: 35px;
       height: 35px;
     }
