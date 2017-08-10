@@ -9,56 +9,57 @@
     </div>
 
     <div class="container">
-      <h2>Work Experience</h2>
-      <div v-for="work in cvData.workExperience" class="container work row">
-        <div class="row col-sm-1">
-          <img class="logo" :src="work.logo">
-        </div>
-        <div class="row col-sm-4 col-md-3">
-          <span class="col-xs-5 col-sm-12"><strong>{{work.company}}</strong></span>
-          <span class="col-xs-7 col-sm-12 text-right"><em>{{work.title}}</em></span>
-          <span class="col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
-        </div>
-        <div class="col-sm-7 col-md-8">
-          <ul v-for="summaryLine in work.summary">
-            <li>{{summaryLine}}</li>
-          </ul>
+      <div class="work-experience cv-section">
+        <h2>Work Experience</h2>
+        <div v-for="work in cvData.workExperience" class="container row">
+          <div class="row col-sm-1">
+            <img class="logo" :src="work.logo">
+          </div>
+          <div class="row col-sm-4 col-md-3">
+            <span class="col-xs-5 col-sm-12"><strong>{{work.company}}</strong></span>
+            <span class="col-xs-7 col-sm-12 work-title text-right"><em>{{work.title}}</em></span>
+            <span class="col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
+          </div>
+          <div class="summary-line col-sm-7 col-md-8">
+            <ul v-for="summaryLine in work.summary">
+              <li>{{summaryLine}}</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <!--<h2>Work Experience</h2>-->
-      <!--<p v-for="work in cvData.workExperience">-->
-        <!--<strong>-->
-          <!--{{work.title}}, {{work.company}} - -->
-          <!--{{monthName(work.startMonth)}} {{work.startYear}}-<span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span>-->
-        <!--</strong>-->
-        <!--<br />-->
-      <!--<ul v-for="summaryLine in work.summary">-->
-        <!--<li>{{summaryLine}}</li>-->
-      <!--</ul>-->
-      <!--</p>-->
+      <div class="education cv-section">
+        <h2>Education</h2>
+        <div v-for="education in cvData.education" class="container row">
+          <div class="row col-sm-1">
+            <img class="logo" :src="education.logo">
+          </div>
+          <div class="col-sm-11">
+            <strong>
+              <span v-if="education.degree">{{education.degree}} </span>
+              <span v-if="education.fieldOfStudy">{{education.fieldOfStudy}}, </span>
+              <span v-if="education.school"></span>{{education.school}}
+            </strong>
+            <br />
+            <span v-if="education.city">{{education.city}}, </span>
+            {{education.country}} -
+            {{education.startYear}}-<span v-if="education.endYear">{{education.endYear}}</span><span v-else>Present</span>
+          </div>
+        </div>
+      </div>
 
-      <h2>Education</h2>
-      <p v-for="education in cvData.education">
-        <strong>
-          <span v-if="education.degree">{{education.degree}} </span>
-          <span v-if="education.fieldOfStudy">{{education.fieldOfStudy}}, </span>
-          <span v-if="education.school"></span>{{education.school}}
-        </strong>
-        <br />
-        <span v-if="education.city">{{education.city}}, </span>
-        {{education.country}} -
-        {{education.startYear}}-<span v-if="education.endYear">{{education.endYear}}</span><span v-else>Present</span>
-      </p>
+      <div class="certification-skills cv-section">
+        <h2>Certification & Skills</h2>
+        <ul v-for="certificationSkill in cvData.certificationsSkills">
+          <li>{{certificationSkill}}</li>
+        </ul>
+      </div>
 
-      <h2>Certification & Skills</h2>
-      <ul v-for="certificationSkill in cvData.certificationsSkills">
-        <li>{{certificationSkill}}</li>
-      </ul>
-
-      <h2>Interests & Hobbies</h2>
-      <div v-for="interestHobby in cvData.interestsHobbies">
-        <span>{{interestHobby}}</span><br />
+      <div class="interests-hobbies cv-section">
+        <h2>Interests & Hobbies</h2>
+        <div v-for="interestHobby in cvData.interestsHobbies">
+          <span>{{interestHobby}}</span><br />
+        </div>
       </div>
     </div>
 
@@ -107,8 +108,6 @@ export default {
 <style scoped>
   .jumbotron {
     background-image: url('../assets/macbook.jpg');
-    /*background-position: center;*/
-    /*background-position: top;*/
     background-repeat: no-repeat;
     min-height: 350px;
    background-size: cover;
@@ -118,15 +117,15 @@ export default {
     color: white;
   }
 
-  .cv {
-    /*background-color: lightgray;*/
-  }
-
-  .work.row {
+  .cv-section > .row {
     margin-bottom: 20px;
   }
 
-  .work.row ul {
+  .cv-section {
+    margin-bottom: 40px;
+  }
+
+  .work-experience .summary-line ul {
     margin-bottom: 0px;
   }
 
@@ -151,7 +150,7 @@ export default {
       width: 35px;
       height: 35px;
     }
-    .work .text-right {
+    .work-title.text-right {
       text-align:left;
     }
   }
