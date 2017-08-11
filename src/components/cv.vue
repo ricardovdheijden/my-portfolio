@@ -48,11 +48,38 @@
         </div>
       </div>
 
-      <div class="certification-skills cv-section">
-        <h2>Certification & Skills</h2>
-        <ul v-for="certificationSkill in cvData.certificationsSkills">
-          <li>{{certificationSkill}}</li>
-        </ul>
+      <div class="certifications-skills cv-section">
+        <h2>Certifications & Skills</h2>
+        <div class="container row">
+          <div class="container type">
+            <strong>Programming skills</strong>
+          </div>
+          <div class="container">
+            <ul v-for="skill in cvData.certificationsSkills.programming">
+              <li>{{skill}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container row">
+          <div class="container type">
+            <strong>Tooling skills</strong>
+          </div>
+          <div class="container">
+            <ul v-for="skill in cvData.certificationsSkills.tools">
+              <li>{{skill}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container row">
+          <div class="container type">
+            <strong>Soft skills</strong>
+          </div>
+          <div class="container">
+            <ul v-for="skill in cvData.certificationsSkills.soft">
+              <li>{{skill}}</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="interests-hobbies cv-section">
@@ -117,14 +144,24 @@ export default {
     color: white;
   }
 
-  .cv-section > .row {
+  .work-experience.cv-section > .row,
+  .education.cv-section > .row {
     margin-bottom: 20px;
+  }
+
+  .certifications-skills.cv-section > .row {
+    margin-bottom: 10px;
+  }
+
+  .certifications-skills.cv-section .type {
+    margin-bottom: 5px;
   }
 
   .cv-section {
     margin-bottom: 40px;
   }
 
+  .certifications-skills ul,
   .work-experience .summary-line ul {
     margin-bottom: 0px;
   }
@@ -150,8 +187,13 @@ export default {
       width: 35px;
       height: 35px;
     }
+
     .work-title.text-right {
       text-align:left;
+    }
+
+    .certifications-skills ul {
+      padding-left: 31px;
     }
   }
 
@@ -160,6 +202,17 @@ export default {
     img.logo {
       width: 50px;
       height: 50px;
+    }
+
+    .certifications-skills ul {
+      padding-left: 49px;
+    }
+  }
+
+  /* col-lg and up */
+  @media (min-width: 1200px) {
+    .certifications-skills ul {
+      padding-left: 65px;
     }
   }
 </style>

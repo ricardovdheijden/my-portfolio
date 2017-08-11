@@ -112,18 +112,24 @@
       "logo": "data:image/png;base64,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"
     }
   ],
-  "certificationsSkills": [
-    "Oracle Certified Associate Java SE 7 Programmer and C# (Dot NET)",
-    "HTML5, CSS3, Sass, JavaScript and TypeScript",
-    "Angular.js, Bootstrap, React, Ember and jQuery",
-    "Node.js, Express.js, PHP, MongoDB, SQL and working with RESTful services",
-    "Testing frameworks Jasmine and Protractor",
-    "Content Management Systems including Tridion and Backbase",
-    "GIT and SVN repositories",
-    "Familiar with package managers Maven and NPM",
-    "Experienced in working in Agile SCRUM teams",
-    "Fluent in Dutch and English"
-  ],
+  "certificationsSkills": {
+    "programming": [
+      "Oracle Certified Associate Java SE 7 Programmer and C# (Dot NET)",
+      "HTML5, CSS3, Sass, JavaScript and TypeScript",
+      "Angular.js, Bootstrap, React, Ember and jQuery",
+      "Node.js, Express.js, PHP, MongoDB, SQL and working with RESTful services",
+      "Testing frameworks Jasmine and Protractor"
+    ],
+    "tools": [
+      "Content Management Systems including Tridion and Backbase",
+      "GIT and SVN repositories",
+      "Familiar with package managers Maven and NPM"
+    ],
+    "soft": [
+      "Experienced in working in Agile SCRUM teams",
+      "Fluent in Dutch and English"
+    ]
+  },
   "interestsHobbies": [
     "Interested in all things IT",
     "Software: developing in C#, building web applications using Node.js, and experimenting with game development in Unity 5",
