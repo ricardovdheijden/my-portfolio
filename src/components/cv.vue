@@ -21,8 +21,8 @@
             <span class="col-xs-12">{{monthName(work.startMonth)}} {{work.startYear}} - <span v-if="work.endYear">{{monthName(work.endMonth)}} {{work.endYear}}</span><span v-else>Present</span></span>
           </div>
           <div class="summary-line col-sm-7 col-md-8">
-            <ul v-for="summaryLine in work.summary">
-              <li>{{summaryLine}}</li>
+            <ul>
+              <li v-for="summaryLine in work.summary">{{summaryLine}}</li>
             </ul>
           </div>
         </div>
@@ -55,8 +55,8 @@
             <strong>Programming skills</strong>
           </div>
           <div class="container">
-            <ul v-for="skill in cvData.certificationsSkills.programming">
-              <li>{{skill}}</li>
+            <ul>
+              <li v-for="skill in cvData.certificationsSkills.programming">{{skill}}</li>
             </ul>
           </div>
         </div>
@@ -65,8 +65,8 @@
             <strong>Tooling skills</strong>
           </div>
           <div class="container">
-            <ul v-for="skill in cvData.certificationsSkills.tools">
-              <li>{{skill}}</li>
+            <ul>
+              <li v-for="skill in cvData.certificationsSkills.tools">{{skill}}</li>
             </ul>
           </div>
         </div>
@@ -75,8 +75,8 @@
             <strong>Soft skills</strong>
           </div>
           <div class="container">
-            <ul v-for="skill in cvData.certificationsSkills.soft">
-              <li>{{skill}}</li>
+            <ul>
+              <li v-for="skill in cvData.certificationsSkills.soft">{{skill}}</li>
             </ul>
           </div>
         </div>
@@ -84,8 +84,25 @@
 
       <div class="interests-hobbies cv-section">
         <h2>Interests & Hobbies</h2>
-        <div v-for="interestHobby in cvData.interestsHobbies">
-          <span>{{interestHobby}}</span><br />
+        <div class="container row">
+          <div class="container type">
+            <strong>IT related</strong>
+          </div>
+          <div class="container">
+            <ul>
+              <li v-for="interest in cvData.interestsHobbies.it">{{interest}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container row">
+          <div class="container type">
+            <strong>Non IT related</strong>
+          </div>
+          <div class="container">
+            <ul>
+              <li v-for="interest in cvData.interestsHobbies.nonIt">{{interest}}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -149,21 +166,13 @@ export default {
     margin-bottom: 20px;
   }
 
-  .certifications-skills.cv-section > .row {
+  .certifications-skills.cv-section > .row,
+  .interests-hobbies.cv-section > .row {
     margin-bottom: 10px;
-  }
-
-  .certifications-skills.cv-section .type {
-    margin-bottom: 5px;
   }
 
   .cv-section {
     margin-bottom: 40px;
-  }
-
-  .certifications-skills ul,
-  .work-experience .summary-line ul {
-    margin-bottom: 0px;
   }
 
   /* Bootstrap grid adjustments */
@@ -183,7 +192,7 @@ export default {
   /* col-sm and up */
   @media (min-width: 768px) {
     img.logo {
-      margin-top: 5px;
+      margin-top: 4px;
       width: 35px;
       height: 35px;
     }
@@ -192,7 +201,8 @@ export default {
       text-align:left;
     }
 
-    .certifications-skills ul {
+    .certifications-skills ul,
+    .interests-hobbies ul {
       padding-left: 31px;
     }
   }
@@ -204,14 +214,16 @@ export default {
       height: 50px;
     }
 
-    .certifications-skills ul {
+    .certifications-skills ul,
+    .interests-hobbies ul {
       padding-left: 49px;
     }
   }
 
   /* col-lg and up */
   @media (min-width: 1200px) {
-    .certifications-skills ul {
+    .certifications-skills ul,
+    .interests-hobbies ul {
       padding-left: 65px;
     }
   }

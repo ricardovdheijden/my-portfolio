@@ -130,11 +130,14 @@
       "Fluent in Dutch and English"
     ]
   },
-  "interestsHobbies": [
-    "Interested in all things IT",
-    "Software: developing in C#, building web applications using Node.js, and experimenting with game development in Unity 5",
-    "Hardware: recently built and configured own server to use as playground for side projects",
-    "Avid traveller since visiting several cities across Southeast Asia during student exchange programme in Singapore",
-    "Disk jockey (DJ) enthusiast and big fan of music and dance festivals"
-  ]
+  "interestsHobbies": {
+    "it": [
+      "developing in C#, building web applications using Node.js, and experimenting with game development in Unity 5",
+      "recently built and configured own server to use as playground for side projects"
+    ],
+    "nonIt": [
+      "Avid traveller since visiting several cities across Southeast Asia during student exchange programme in Singapore",
+      "Disk jockey (DJ) enthusiast and big fan of music and dance festivals"
+    ]
+  }
 }
