@@ -9,17 +9,52 @@
   <div class="container">
     <div class="professional project-section row">
       <h2>Professional projects</h2>
-        <div v-for="project in projectsData.professional" class="">
+        <div v-for="(project, index) in projectsData.professional" class="">
           <div class="col-sm-4 project">
             <img class="logo" :src="project.image">
-            {{project.name}}<br />
-            <em>{{project.company}}</em>
+            <div class="row col-sm-11">
+              {{project.name}}<br />
+              <em>{{project.company}}</em>
+            </div>
+            <div class="col-sm-1">
+              <i class="glyphicon glyphicon-ok"></i>
+            </div>
           </div>
         </div>
     </div>
 
     <div class="side project-section row">
       <h2>Side projects</h2>
+      <div v-for="project in projectsData.side" class="">
+        <div class="col-sm-4 project">
+          <img class="logo" :src="project.image">
+          <div class="row col-sm-11">
+            {{project.name}}
+          </div>
+          <div class="col-sm-1">
+            <i class="glyphicon glyphicon-ok"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button data-toggle="modal" data-target="#myModal" class="btn btn-primary">
+      My Button
+    </button>
+    <div class="modal fade" id="myModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">My Modal</h4>
+          </div>
+          <div class="modal-body">
+            <p>My Modal Body</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   </div>
