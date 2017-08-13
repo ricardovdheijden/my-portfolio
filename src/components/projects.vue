@@ -37,12 +37,26 @@
         </div>
       </div>
     </div>
+
+    <bootstrap-modal ref="theModal" size="large">
+      <div slot="title">
+        Your title here
+      </div>
+      <div slot="body">
+        Your body here
+      </div>
+      <div slot="footer">
+        Your footer here
+      </div>
+    </bootstrap-modal>
+
   </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import bootstrapModal from 'vue2-bootstrap-modal'
 export default {
   name: 'projects',
   data () {
@@ -52,10 +66,14 @@ export default {
   },
   mounted () {
     let self = this
+    this.$refs.theModal.open()
     axios.get('static/json/projects-data.json')
       .then(function (response) {
         self.projectsData = response.data
       })
+  },
+  components: {
+    'bootstrap-modal': bootstrapModal
   }
 }
 </script>
