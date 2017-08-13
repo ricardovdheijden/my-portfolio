@@ -10,7 +10,7 @@
     <div class="professional project-section row">
       <h2>Professional projects</h2>
         <div v-for="(project, index) in projectsData.professional" class="">
-          <div class="col-sm-4 project">
+          <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.company)">
             <img class="logo" :src="project.image">
             <div class="row col-sm-11">
               {{project.name}}<br />
@@ -26,7 +26,7 @@
     <div class="side project-section row">
       <h2>Side projects</h2>
       <div v-for="project in projectsData.side" class="">
-        <div class="col-sm-4 project">
+        <div class="col-sm-4 project" v-on:click="showDetails(project.name)">
           <img class="logo" :src="project.image">
           <div class="row col-sm-11">
             {{project.name}}
@@ -39,9 +39,7 @@
     </div>
 
     <bootstrap-modal ref="theModal" size="large">
-      <div slot="title">
-        Your title here
-      </div>
+      <div slot="title">{{modalContent.title}}<span v-if="modalContent.company"> ({{modalContent.company}})</span></div>
       <div slot="body">
         Your body here
       </div>
@@ -61,16 +59,26 @@ export default {
   name: 'projects',
   data () {
     return {
-      projectsData: {}
+      projectsData: {},
+      modalContent: {
+        title: '',
+        company: ''
+      }
     }
   },
   mounted () {
     let self = this
-    this.$refs.theModal.open()
     axios.get('static/json/projects-data.json')
       .then(function (response) {
         self.projectsData = response.data
       })
+  },
+  methods: {
+    showDetails: function (title, company) {
+      this.modalContent.title = title
+      this.modalContent.company = company
+      this.$refs.theModal.open()
+    }
   },
   components: {
     'bootstrap-modal': bootstrapModal
@@ -97,5 +105,7 @@ export default {
 
   .project-section .project {
     margin-bottom: 20px;
+    cursor: pointer;
+    cursor: hand;
   }
 </style>
