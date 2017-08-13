@@ -10,7 +10,7 @@
     <div class="professional project-section row">
       <h2>Professional projects</h2>
         <div v-for="(project, index) in projectsData.professional" class="">
-          <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.company)">
+          <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.description, project.image, project.company)">
             <img class="logo" :src="project.image">
             <div class="row col-sm-11">
               {{project.name}}<br />
@@ -26,7 +26,7 @@
     <div class="side project-section row">
       <h2>Side projects</h2>
       <div v-for="project in projectsData.side" class="">
-        <div class="col-sm-4 project" v-on:click="showDetails(project.name)">
+        <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.description, project.image)">
           <img class="logo" :src="project.image">
           <div class="row col-sm-11">
             {{project.name}}
@@ -41,7 +41,12 @@
     <bootstrap-modal ref="theModal" size="large">
       <div slot="title">{{modalContent.title}}<span v-if="modalContent.company"> ({{modalContent.company}})</span></div>
       <div slot="body">
-        Your body here
+        <div class="col-sm-6">
+          <img class="logo" :src="modalContent.image">
+        </div>
+        <div class="col-sm-12">
+          {{modalContent.description}}
+        </div>
       </div>
       <div slot="footer">
         Your footer here
@@ -62,7 +67,9 @@ export default {
       projectsData: {},
       modalContent: {
         title: '',
-        company: ''
+        company: '',
+        description: '',
+        image: ''
       }
     }
   },
@@ -74,9 +81,11 @@ export default {
       })
   },
   methods: {
-    showDetails: function (title, company) {
+    showDetails: function (title, description, image, company) {
       this.modalContent.title = title
       this.modalContent.company = company
+      this.modalContent.description = description
+      this.modalContent.image = image
       this.$refs.theModal.open()
     }
   },
