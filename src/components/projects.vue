@@ -18,9 +18,6 @@
                 <li><em>{{project.company}}</em></li>
               </ul>
             </div>
-            <div class="col-sm-1">
-              <i class="glyphicon glyphicon-ok"></i>
-            </div>
           </div>
         </div>
     </div>
@@ -32,9 +29,6 @@
           <img class="logo" :src="project.image">
           <div class="row col-sm-11">
             {{project.name}}
-          </div>
-          <div class="col-sm-1">
-            <i class="glyphicon glyphicon-ok"></i>
           </div>
         </div>
       </div>
