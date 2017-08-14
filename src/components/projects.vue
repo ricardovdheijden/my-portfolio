@@ -10,11 +10,13 @@
     <div class="professional project-section row">
       <h2>Professional projects</h2>
         <div v-for="(project, index) in projectsData.professional" class="">
-          <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.description, project.image, project.company)">
+          <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.finished, project.website, project.description, project.image, project.company)">
             <img class="logo" :src="project.image">
             <div class="row col-sm-11">
-              {{project.name}}<br />
-              <em>{{project.company}}</em>
+              <ul class="list-unstyled">
+                <li>{{project.name}}</li>
+                <li><em>{{project.company}}</em></li>
+              </ul>
             </div>
             <div class="col-sm-1">
               <i class="glyphicon glyphicon-ok"></i>
@@ -26,7 +28,7 @@
     <div class="side project-section row">
       <h2>Side projects</h2>
       <div v-for="project in projectsData.side" class="">
-        <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.description, project.image)">
+        <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.finiehd, project.website, project.description, project.image)">
           <img class="logo" :src="project.image">
           <div class="row col-sm-11">
             {{project.name}}
@@ -39,10 +41,34 @@
     </div>
 
     <bootstrap-modal ref="theModal" size="large">
-      <div slot="title">{{modalContent.title}}<span v-if="modalContent.company"> ({{modalContent.company}})</span></div>
-      <div slot="body">
+      <div slot="title">{{modalContent.title}}</div>
+      <div slot="body" class="row">
         <div class="col-sm-6">
           <img class="logo" :src="modalContent.image">
+        </div>
+        <div class="col-sm-6">
+          <table>
+            <tr v-if="modalContent.company">
+              <th>Company:</th>
+              <td>{{modalContent.company}}</td>
+            </tr>
+            <tr>
+              <th>Website:</th>
+              <td><a v-bind:href="modalContent.website.url" target="_blank">{{ modalContent.website.name }}</a></td>
+            </tr>
+            <tr>
+              <th>Programming language:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Project status:</th>
+              <td><span v-if="modalContent.finished">Finished</span><span v-else="">In progress</span></td>
+            </tr>
+            <tr>
+              <th>Source code:</th>
+              <td></td>
+            </tr>
+          </table>
         </div>
         <div class="col-sm-12">
           {{modalContent.description}}
@@ -68,6 +94,8 @@ export default {
       modalContent: {
         title: '',
         company: '',
+        finished: false,
+        website: {},
         description: '',
         image: ''
       }
@@ -81,8 +109,10 @@ export default {
       })
   },
   methods: {
-    showDetails: function (title, description, image, company) {
+    showDetails: function (title, finished, website, description, image, company) {
       this.modalContent.title = title
+      this.modalContent.finished = finished
+      this.modalContent.website = website
       this.modalContent.company = company
       this.modalContent.description = description
       this.modalContent.image = image
