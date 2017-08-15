@@ -10,8 +10,8 @@
     <div class="professional project-section row">
       <h2>Professional projects</h2>
         <div v-for="(project, index) in projectsData.professional" class="">
-          <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.finished, project.website, project.description, project.image, project.company)">
-            <img class="logo" :src="project.image">
+          <div class="col-sm-4 project" v-on:click="showDetails(project)">
+            <img class="logo" :src="project.images[0]">
             <div class="row col-sm-11">
               <ul class="list-unstyled">
                 <li>{{project.name}}</li>
@@ -25,8 +25,8 @@
     <div class="side project-section row">
       <h2>Side projects</h2>
       <div v-for="project in projectsData.side" class="">
-        <div class="col-sm-4 project" v-on:click="showDetails(project.name, project.finiehd, project.website, project.description, project.image)">
-          <img class="logo" :src="project.image">
+        <div class="col-sm-4 project" v-on:click="showDetails(project)">
+          <img class="logo" :src="project.images[0]">
           <div class="row col-sm-11">
             {{project.name}}
           </div>
@@ -34,11 +34,11 @@
       </div>
     </div>
 
-    <bootstrap-modal ref="theModal" size="large">
-      <div slot="title">{{modalContent.title}}</div>
+    <bootstrap-modal ref="projectDetails" size="large">
+      <div slot="title">{{modalContent.name}}</div>
       <div slot="body" class="row">
         <div class="col-sm-6">
-          <img class="logo" :src="modalContent.image">
+          <img class="logo" :src="modalContent.images[0]">
         </div>
         <div class="col-sm-6">
           <table>
@@ -91,7 +91,7 @@ export default {
         finished: false,
         website: {},
         description: '',
-        image: ''
+        images: ''
       }
     }
   },
@@ -103,14 +103,14 @@ export default {
       })
   },
   methods: {
-    showDetails: function (title, finished, website, description, image, company) {
-      this.modalContent.title = title
-      this.modalContent.finished = finished
-      this.modalContent.website = website
-      this.modalContent.company = company
-      this.modalContent.description = description
-      this.modalContent.image = image
-      this.$refs.theModal.open()
+    showDetails: function (project) {
+      this.modalContent.name = project.name
+      this.modalContent.finished = project.finished
+      this.modalContent.website = project.website
+      this.modalContent.company = project.company
+      this.modalContent.description = project.description
+      this.modalContent.images = project.images
+      this.$refs.projectDetails.open()
     }
   },
   components: {

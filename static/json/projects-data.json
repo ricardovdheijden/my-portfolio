@@ -9,7 +9,9 @@
         "name": "ABN AMRO Company Logo"
       },
       "description": "This is the description of Comapny Logos",
-      "image": "/static/img/abn-amro-company-logo.png"
+      "images": [
+        "/static/img/abn-amro-company-logo.png"
+      ]
     },{
       "name": "Van meten naar weten",
       "company": "Sportinnovator",
@@ -19,7 +21,9 @@
         "name": "Van Meten naar Weten"
       },
       "description": "This is the description of Van meten naar weten",
-      "image": "/static/img/van-meten-naar-weten.png"
+      "images": [
+        "/static/img/van-meten-naar-weten.png"
+      ]
     }
   ],
   "side": [
@@ -31,7 +35,9 @@
         "name": ""
       },
       "description": "This is the description of Kodi on iMon",
-      "image": "/static/img/kodi-on-imon.png"
+      "images": [
+        "/static/img/kodi-on-imon.png"
+      ]
     }
   ]
 }
