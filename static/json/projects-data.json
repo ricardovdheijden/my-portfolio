@@ -18,7 +18,7 @@
         "name": ""
       },
       "images": [
-        "/static/img/abn-amro-company-logo.png"
+        "static/img/abn-amro-company-logo.png"
       ]
     },{
       "name": "Van meten naar weten",
@@ -38,7 +38,7 @@
         "name": ""
       },
       "images": [
-        "/static/img/van-meten-naar-weten.png"
+        "static/img/van-meten-naar-weten.png"
       ]
     }
   ],
@@ -61,7 +61,7 @@
         "name": "GitHub"
       },
       "images": [
-        "/static/img/kodi-on-imon.png"
+        "static/img/kodi-on-imon.png"
       ]
     }
   ]
