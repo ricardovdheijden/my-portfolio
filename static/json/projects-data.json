@@ -3,24 +3,40 @@
     {
       "name": "Company Logos",
       "company": "ABN AMRO",
-      "finished": true,
       "website": {
         "url": "https://www.abnamro.nl/nl/grootzakelijk/producten/cash-management/betalen/internetbankieren/mogelijkheden/bedrijfslogo-toevoegen.html",
         "name": "ABN AMRO Company Logo"
       },
-      "description": "This is the description of Comapny Logos",
+      "language": "JavaScript, AngularJS",
+      "finished": true,
+      "description": [
+        "ABN AMRO wanted to offer a new functionality for corporate clients to show their company logos in the mutation overview in internet banking.",
+        "I was part of the SCRUM team building this widget for the internet banking application. During the project I was responsible for building the front-end using the JavaScript framework AngularJS as well as integrating the widget in the existing internet banking application."
+      ],
+      "sourceCode": {
+        "url": "",
+        "name": ""
+      },
       "images": [
         "/static/img/abn-amro-company-logo.png"
       ]
     },{
       "name": "Van meten naar weten",
       "company": "Sportinnovator",
-      "finished": true,
       "website": {
         "url": "https://sportinnovator.nl/projects/van-meten-naar-weten",
         "name": "Van Meten naar Weten"
       },
-      "description": "This is the description of Van meten naar weten",
+      "language": "JavaScript, AngularJS",
+      "finished": true,
+      "description": [
+        "Sportinnovator wanted to offer the national athletes a more innovative way to show training statistics. Normally the statistics are available after a few days, but it is better for the athletes to get this feedback directly after their training.",
+        "I was part of a SCRUM team at Capgemini to build a portal showing training statistics directly after training. Our team was building the whole application including front-end, back-end and database. During the project I was responsible for rebuilding the exisiting application in such a way that there were only reusable components. I used the JavaScript framework AngularJS together with Admin-LTE."
+      ],
+      "sourceCode": {
+        "url": "",
+        "name": ""
+      },
       "images": [
         "/static/img/van-meten-naar-weten.png"
       ]
@@ -29,12 +45,21 @@
   "side": [
     {
       "name": "Kodi on iMon",
-      "finished": true,
+      "company": "",
       "website": {
         "url": "",
         "name": ""
       },
-      "description": "This is the description of Kodi on iMon",
+      "language": "C# .NET",
+      "finished": true,
+      "description": [
+        "The display of my media center was not working with the latest version of Kodi anymore. Since there was no solution available I decided to create this functionality myself. I found an example and a driver how to write static text to the screen.",
+        "During the project I made it possible to put scrollable text on the screen with adjustable speed as well as connecting to the Kodi API to read the media information."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/kodi-on-imon",
+        "name": "GitHub"
+      },
       "images": [
         "/static/img/kodi-on-imon.png"
       ]

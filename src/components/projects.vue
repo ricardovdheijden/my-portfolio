@@ -28,7 +28,10 @@
         <div class="col-sm-4 project" v-on:click="showDetails(project)">
           <img class="logo" :src="project.images[0]">
           <div class="row col-sm-11">
-            {{project.name}}
+            <ul class="list-unstyled">
+              <li>{{project.name}}</li>
+              <li><em>{{project.company}}</em></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -46,30 +49,32 @@
               <th>Company:</th>
               <td>{{modalContent.company}}</td>
             </tr>
-            <tr>
+            <tr v-if="modalContent.website.url">
               <th>Website:</th>
               <td><a v-bind:href="modalContent.website.url" target="_blank">{{ modalContent.website.name }}</a></td>
             </tr>
-            <tr>
+            <tr v-if="modalContent.language">
               <th>Programming language:</th>
-              <td></td>
+              <td>{{modalContent.language}}</td>
             </tr>
             <tr>
               <th>Project status:</th>
               <td><span v-if="modalContent.finished">Finished</span><span v-else="">In progress</span></td>
             </tr>
-            <tr>
+            <tr v-if="modalContent.sourceCode.url">
               <th>Source code:</th>
-              <td></td>
+              <td><a v-bind:href="modalContent.sourceCode.url" target="_blank">{{ modalContent.sourceCode.name }}</a></td>
             </tr>
           </table>
         </div>
         <div class="col-sm-12">
-          {{modalContent.description}}
+          <p v-for="paragraph in modalContent.description">
+            {{paragraph}}
+          </p>
         </div>
       </div>
       <div slot="footer">
-        Your footer here
+
       </div>
     </bootstrap-modal>
 
@@ -88,9 +93,11 @@ export default {
       modalContent: {
         title: '',
         company: '',
-        finished: false,
         website: {},
+        language: '',
+        finished: false,
         description: '',
+        sourceCode: {},
         images: ''
       }
     }
@@ -105,10 +112,12 @@ export default {
   methods: {
     showDetails: function (project) {
       this.modalContent.name = project.name
-      this.modalContent.finished = project.finished
-      this.modalContent.website = project.website
       this.modalContent.company = project.company
+      this.modalContent.website = project.website
+      this.modalContent.language = project.language
+      this.modalContent.finished = project.finished
       this.modalContent.description = project.description
+      this.modalContent.sourceCode = project.sourceCode
       this.modalContent.images = project.images
       this.$refs.projectDetails.open()
     }
@@ -134,6 +143,11 @@ export default {
 
   img {
     width: 100%;
+    margin-bottom: 10px;
+  }
+
+  table {
+    margin-bottom: 10px;
   }
 
   .project-section .project {
