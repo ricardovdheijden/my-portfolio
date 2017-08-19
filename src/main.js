@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import mpNavigation from './components/mp-navigation.vue'
 
+Vue.component('mp-navigation', mpNavigation)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
