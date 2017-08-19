@@ -1,0 +1,108 @@
+{
+  "intro": "Worked on several professional and side projects the last years.",
+  "professional": [
+    {
+      "name": "Company Logos",
+      "company": "ABN AMRO",
+      "website": {
+        "url": "https://www.abnamro.nl/nl/grootzakelijk/producten/cash-management/betalen/internetbankieren/mogelijkheden/bedrijfslogo-toevoegen.html",
+        "name": "ABN AMRO Company Logo"
+      },
+      "language": "JavaScript, AngularJS, Bootstrap",
+      "finished": true,
+      "description": [
+        "ABN AMRO wanted to offer a new functionality for corporate clients to show their company logos in the mutation overview in internet banking.",
+        "I was part of the SCRUM team building this widget for the internet banking application. During the project I was responsible for building the front-end using the JavaScript framework AngularJS as well as integrating the widget in the existing internet banking application."
+      ],
+      "sourceCode": {
+        "url": "",
+        "name": ""
+      },
+      "images": [
+        "static/img/abn-amro-company-logo.png"
+      ]
+    },{
+      "name": "Van meten naar weten",
+      "company": "Sportinnovator",
+      "website": {
+        "url": "https://sportinnovator.nl/projects/van-meten-naar-weten",
+        "name": "Van Meten naar Weten"
+      },
+      "language": "JavaScript, AngularJS, Sass, Bootstrap",
+      "finished": true,
+      "description": [
+        "Sportinnovator wanted to offer the national athletes a more innovative way to show training statistics. Normally the statistics are available after a few days, but it is better for the athletes to get this feedback directly after their training.",
+        "I was part of a SCRUM team at Capgemini to build a portal showing training statistics directly after training. Our team was building the whole application including front-end, back-end and database. During the project I was responsible for rebuilding the exisiting application in such a way that there were only reusable components. I used the JavaScript framework AngularJS together with Admin-LTE."
+      ],
+      "sourceCode": {
+        "url": "",
+        "name": ""
+      },
+      "images": [
+        "static/img/van-meten-naar-weten.png"
+      ]
+    }
+  ],
+  "side": [
+    {
+      "name": "My-Portfolio",
+      "company": "",
+      "website": {
+        "url": "",
+        "name": ""
+      },
+      "language": "JavaScript, Vue.js, Bootstrap",
+      "finished": false,
+      "description": [
+        "This website is one of my side projects and I am currently working on this. I wanted to have more experience with Vue.js and showcase my development skills. The idea is to create a portfolio website suited for static web servers and have a clear separation between content and functionality. Currently all the content is stored in json files to make this happen.",
+        "The my-portfolio is created using Vue.js 2.0 and the Bootstrap framework."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/my-portfolio",
+        "name": "GitHub - My-Portfolio"
+      },
+      "images": [
+        "static/img/my-portfolio.png"
+      ]
+    }, {
+      "name": "Kodi on iMon",
+      "company": "",
+      "website": {
+        "url": "",
+        "name": ""
+      },
+      "language": "C# .NET",
+      "finished": true,
+      "description": [
+        "The display of my media center was not working with the latest version of Kodi anymore. Since there was no solution available I decided to create this functionality myself. I found an example and a driver how to write static text to the screen.",
+        "During the project I made it possible to put scrollable text on the screen with adjustable speed as well as connecting to the Kodi API to read the media information."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/kodi-on-imon",
+        "name": "GitHub - Kodi-on-iMon"
+      },
+      "images": [
+        "static/img/kodi-on-imon.png"
+      ]
+    }, {
+      "name": "Topic-Vote",
+      "company": "",
+      "website": {
+        "url": "https://topic-vote.herokuapp.com/",
+        "name": "Topic-Vote"
+      },
+      "language": "JavaScript, AngularJS, Node.js, Express.js",
+      "finished": true,
+      "description": [
+        "This web application was an exercise to create a full-stack application including front-end and REST service. I built both sides to get more experience with full-stack development."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/topic-vote",
+        "name": "GitHub - Topic-Vote"
+      },
+      "images": [
+        "static/img/topic-vote.png"
+      ]
+    }
+  ]
+}
