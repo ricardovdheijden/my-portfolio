@@ -20,7 +20,8 @@
     "vue": "^2.3.3",
     "vue-router": "^2.6.0",
     "vue-strap": "^1.1.37",
-    "vue2-bootstrap-modal": "^0.1.10"
+    "vue2-bootstrap-modal": "^0.1.10",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

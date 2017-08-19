@@ -120,6 +120,7 @@ export default {
     }
   },
   mounted () {
+    this.$store.state.activePage = 'cv'
     let self = this
     axios.get('static/json/cv-data.json')
       .then(function (response) {
