@@ -44,7 +44,7 @@
           <img class="logo" :src="modalContent.images[0]">
         </div>
         <div class="col-sm-6">
-          <table>
+          <table class="table">
             <tr v-if="modalContent.company">
               <th>Company:</th>
               <td>{{modalContent.company}}</td>
@@ -54,7 +54,7 @@
               <td><a v-bind:href="modalContent.website.url" target="_blank">{{ modalContent.website.name }}</a></td>
             </tr>
             <tr v-if="modalContent.language">
-              <th>Programming language:</th>
+              <th>Programming&nbsp;language:</th>
               <td>{{modalContent.language}}</td>
             </tr>
             <tr>
@@ -74,7 +74,7 @@
         </div>
       </div>
       <div slot="footer">
-
+        <button type="button" class="btn btn-default btn-md" v-on:click="$refs.projectDetails.close()">Close</button>
       </div>
     </bootstrap-modal>
 
@@ -148,6 +148,11 @@ export default {
 
   table {
     margin-bottom: 10px;
+  }
+
+  table th,
+  table td {
+    vertical-align: top;
   }
 
   .project-section .project {
