@@ -36,7 +36,7 @@ export default {
       navigation: [
         {
           title: 'Home',
-          page: ''
+          page: 'home'
         }, {
           title: 'Projects',
           page: 'projects'
