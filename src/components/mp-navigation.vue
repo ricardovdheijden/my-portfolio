@@ -9,7 +9,7 @@
       </div>
         <div class="collapse navbar-collapse" v-bind:class="{in: mobileNavOpen}">
           <!-- The menu is generated from the 'navigation' array -->
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
             <li v-for="item in navigation"
                 :class="{active: activePage==item.page}"
                 v-on:click="mobileNavOpen = false">
@@ -35,12 +35,17 @@ export default {
     return {
       navigation: [
         {
+          title: 'Home',
+          page: ''
+        }, {
           title: 'Projects',
           page: 'projects'
-        },
-        {
+        }, {
           title: 'CV',
           page: 'cv'
+        }, {
+          title: 'Contact',
+          page: 'contact'
         }
       ],
       mobileNavOpen: false
