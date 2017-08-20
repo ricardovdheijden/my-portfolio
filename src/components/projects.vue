@@ -104,6 +104,7 @@ export default {
     }
   },
   mounted () {
+    this.$store.state.activePage = 'projects'
     let self = this
     axios.get('static/json/projects-data.json')
       .then(function (response) {

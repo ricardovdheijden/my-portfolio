@@ -8,13 +8,17 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/projects',
       name: 'projects',
       component: projects
     }, {
       path: '/cv',
       name: 'cv',
       component: cv
+    }, {
+      path: '/',
+      name: 'default',
+      component: projects
     }
   ]
 })
