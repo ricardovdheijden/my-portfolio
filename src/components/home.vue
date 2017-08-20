@@ -43,8 +43,24 @@ export default {
   }
 
   .introduction {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     background-color: lightgrey;
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .introduction {
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: white;
+    }
   }
 </style>
