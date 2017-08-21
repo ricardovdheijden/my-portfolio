@@ -42,12 +42,7 @@ export default {
     padding-right: 0;
   }
 
-  .introduction {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background-color: lightgrey;
-  }
-
+  /* col-xs only */
   @media (max-width: 767px) {
     h1 {
       font-size: 30px;
@@ -61,6 +56,29 @@ export default {
       margin-top: 0;
       margin-bottom: 0;
       background-color: white;
+    }
+  }
+
+  /* col-sm and up */
+  @media (min-width: 768px) {
+    .introduction {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      background-color: lightgrey;
+    }
+  }
+
+  /* col-md and up */
+  @media (min-width: 992px) {
+    .introduction {
+      margin-bottom: 100px;
+    }
+  }
+
+  /* col-lg and up */
+  @media (min-width: 1200px) {
+    .introduction {
+      margin-bottom: 180px;
     }
   }
 </style>
