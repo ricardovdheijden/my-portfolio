@@ -2,12 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import cv from '@/components/cv'
 import projects from '@/components/projects'
+import home from '@/components/home'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+      path: '/home',
+      name: 'home',
+      component: home
+    }, {
       path: '/projects',
       name: 'projects',
       component: projects
@@ -18,7 +23,7 @@ export default new Router({
     }, {
       path: '/',
       name: 'default',
-      component: projects
+      component: home
     }
   ]
 })
