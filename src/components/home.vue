@@ -68,17 +68,10 @@ export default {
     }
   }
 
-  /* col-md and up */
-  @media (min-width: 992px) {
-    .introduction {
-      margin-bottom: 100px;
-    }
-  }
-
   /* col-lg and up */
   @media (min-width: 1200px) {
     .introduction {
-      margin-bottom: 180px;
+      margin-bottom: 150px;
     }
   }
 </style>
