@@ -2,7 +2,7 @@
   <div id="app">
     <mp-navigation></mp-navigation>
     <router-view></router-view>
-    <!--<mp-footer></mp-footer>-->
+    <mp-footer></mp-footer>
   </div>
 </template>
 

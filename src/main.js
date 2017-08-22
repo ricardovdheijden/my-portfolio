@@ -8,7 +8,7 @@ import mpNavigation from './components/mp-navigation.vue'
 import mpFooter from './components/mp-footer.vue'
 
 Vue.component('mp-navigation', mpNavigation)
-Vue.compoment('mp-footer', mpFooter)
+Vue.component('mp-footer', mpFooter)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
