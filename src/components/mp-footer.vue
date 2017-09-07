@@ -34,7 +34,7 @@ export default {
   color: white;
   background-color: dimgrey;
   margin-top: 100px;
-  min-height: 150px;
+  min-height: 60px;
 }
 
 a {
@@ -43,6 +43,7 @@ a {
 
 .links {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .links ul {
