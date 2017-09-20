@@ -13,5 +13,9 @@ export default {
 </script>
 
 <style>
-@import '../node_modules/bootstrap/dist/css/bootstrap.css'
+  html {
+    overflow-y: scroll;
+  }
+
+  @import '../node_modules/bootstrap/dist/css/bootstrap.css'
 </style>
