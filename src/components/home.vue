@@ -1,10 +1,10 @@
 <template>
-  <div class="container introduction">
-    <div class="row row-eq-height">
+  <div class="container">
+    <div class="home row row-eq-height">
       <div class="col-sm-6 image">
         <img class="logo" :src="homeData.image">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 introduction">
         <h1>{{homeData.name}}</h1>
         <h2>{{homeData.role}}</h2>
         <p v-for="paragraph in homeData.introduction">{{paragraph}}</p>
@@ -41,6 +41,9 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
+  .home {
+    margin-bottom: 40px;
+  }
 
   /* col-xs only */
   @media (max-width: 767px) {
@@ -50,28 +53,6 @@ export default {
 
     h2 {
       font-size: 25px;
-    }
-
-    .introduction {
-      margin-top: 0;
-      margin-bottom: 0;
-      background-color: white;
-    }
-  }
-
-  /* col-sm and up */
-  @media (min-width: 768px) {
-    .introduction {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      background-color: lightgrey;
-    }
-  }
-
-  /* col-lg and up */
-  @media (min-width: 1200px) {
-    .introduction {
-      margin-bottom: 150px;
     }
   }
 </style>

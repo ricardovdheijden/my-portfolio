@@ -33,8 +33,7 @@ export default {
 .footer {
   color: white;
   background-color: dimgrey;
-  margin-top: 100px;
-  min-height: 60px;
+  height: 60px;
 }
 
 a {
@@ -63,13 +62,5 @@ a {
 ul li:last-child:after {
   content: "";
   padding: 0;
-}
-
-/* Bootstrap grid adjustments */
-/* col-xs only */
-@media (max-width: 767px) {
-  .footer {
-    margin-top: 50px;
-  }
 }
 </style>
