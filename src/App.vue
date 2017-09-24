@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <mp-navigation></mp-navigation>
-    <router-view></router-view>
+    <router-view class="view"></router-view>
     <mp-footer></mp-footer>
   </div>
 </template>
@@ -15,6 +15,10 @@ export default {
 <style>
   html {
     overflow-y: scroll;
+  }
+
+  .view {
+    min-height: calc(100vh - 60px - 50px);
   }
 
   @import '../node_modules/bootstrap/dist/css/bootstrap.css'
