@@ -41,7 +41,7 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
-  .introduction {
+  .home {
     margin-bottom: 40px;
   }
 
@@ -53,17 +53,6 @@ export default {
 
     h2 {
       font-size: 25px;
-    }
-
-    .home {
-      background-color: white;
-    }
-  }
-
-  /* col-sm and up */
-  @media (min-width: 768px) {
-    .home {
-      background-color: lightgrey;
     }
   }
 </style>
