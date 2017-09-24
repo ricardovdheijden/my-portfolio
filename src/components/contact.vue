@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="home row row-eq-height">
+    <div class="contact row row-eq-height">
       <div class="col-sm-6 image">
-        <img class="logo" :src="contactData.image">
+        <img class="logo" src="../assets/pen.png">
       </div>
       <div class="col-sm-6 contacts">
         <div class="row">
@@ -11,7 +11,7 @@
             <p>{{contactData.introduction}}</p>
           </div>
         </div>
-        <div class="row contact" v-for="contact in contactData.contacts">
+        <div class="row contact-item" v-for="contact in contactData.contacts">
           <div class="col-xs-2">
             <img class="logo" :src="contact.logo">
           </div>
@@ -49,21 +49,10 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
-  .home {
+  .contact {
     margin-bottom: 40px;
   }
-  .contact {
+  .contact-item {
     margin-bottom: 20px;
-  }
-
-  /* col-xs only */
-  @media (max-width: 767px) {
-    h1 {
-      font-size: 30px;
-    }
-
-    h2 {
-      font-size: 25px;
-    }
   }
 </style>
