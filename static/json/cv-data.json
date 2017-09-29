@@ -6,9 +6,7 @@
   },
   "personal": {
     "name": "Ricardo van der Heijden",
-    "role": "Developer",
-    "linkedin": "",
-    "residence": "Bergen op Zoom, NL"
+    "role": "Software developer"
   },
   "profile": "IT professional with five years of front-end development experience, strong communication skills, and a keen interest to work with new technologies to achieve the most user-friendly and effective IT solutions.",
   "workExperience": [
@@ -16,7 +14,7 @@
       "company": "Capgemini",
       "title": "Developer",
       "startYear": 2011,
-      "startMonth": 1,
+      "startMonth": 11,
       "endYear": 0,
       "endMonth": 0,
       "summary": [

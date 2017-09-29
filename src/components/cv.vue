@@ -3,7 +3,6 @@
     <div class="jumbotron">
       <div class="container">
         <h1>{{cvData.personal.name}}</h1>
-        <h2>{{cvData.personal.role}} | {{cvData.personal.residence}}</h2>
         <p>{{cvData.profile}}</p>
       </div>
     </div>
