@@ -3,7 +3,6 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Projects</h1>
-        <p>{{projectsData.intro}}</p>
       </div>
     </div>
 

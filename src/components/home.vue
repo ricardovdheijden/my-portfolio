@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="home row row-eq-height">
-      <div class="col-sm-6 image">
+      <div class="col-sm-4 image">
         <img class="logo" :src="homeData.image">
       </div>
-      <div class="col-sm-6 introduction">
+      <div class="col-sm-8 introduction">
         <h1>{{homeData.name}}</h1>
         <h2>{{homeData.role}}</h2>
         <p v-for="paragraph in homeData.introduction">{{paragraph}}</p>
@@ -44,15 +44,30 @@ export default {
   .home {
     margin-bottom: 40px;
   }
+  @media (min-height: 750px) {
+    .home {
+      margin-top: calc(40vh - 237px - 60px); /*calc(100vh - 60px - 50px)*/
+    }
+  }
 
   /* col-xs only */
   @media (max-width: 767px) {
+    .home {
+      margin-top: 0;
+    }
     h1 {
       font-size: 30px;
     }
 
     h2 {
       font-size: 25px;
+    }
+  }
+
+  /* col-sm and up */
+  @media (min-width: 768px) {
+    h1 {
+      margin-top: 0;
     }
   }
 </style>
