@@ -45,7 +45,7 @@ export default {
   }
   @media (min-height: 750px) {
     .home {
-      margin-top: calc(40vh - 237px - 60px); /*calc(100vh - 60px - 50px)*/
+      margin-top: calc(50vh - 260px - 60px);
     }
   }
 
@@ -67,6 +67,11 @@ export default {
   @media (min-width: 768px) {
     h1 {
       margin-top: 0;
+    }
+    .home {
+      font-size: 20px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 </style>
