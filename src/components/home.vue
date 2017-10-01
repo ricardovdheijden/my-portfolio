@@ -5,8 +5,7 @@
         <img class="logo" :src="homeData.image">
       </div>
       <div class="col-sm-8 introduction">
-        <h1>{{homeData.name}}</h1>
-        <h2>{{homeData.role}}</h2>
+        <h1>{{homeData.title}}</h1>
         <p v-for="paragraph in homeData.introduction">{{paragraph}}</p>
       </div>
     </div>
