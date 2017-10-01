@@ -7,17 +7,12 @@
     </div>
 
     <div class="container">
-      <div class="contact-section col-sm-6 container row">
-        <h2>{{contactData.connect.title}}</h2>
-        <div class="contact-item" v-for="contact in contactData.connect.contacts">
-          <h3><img class="logo" :src="contact.logo"><a v-bind:href="contact.link" target="_blank">{{ contact.text }}</a></h3>
-        </div>
+      <div class="col-sm-6 container row">
+        <h2>{{contactData.text}}</h2>
       </div>
-
-      <div class="follow-section col-sm-6 container row">
-        <h2>{{contactData.follow.title}}</h2>
-        <div class="channel-item" v-for="channel in contactData.follow.channels">
-          <h3><img class="logo" :src="channel.logo"><a v-bind:href="channel.link" target="_blank">{{ channel.text }}</a></h3>
+      <div class="contact-section col-sm-6 container row">
+        <div class="contact-item" v-for="contact in contactData.contacts">
+          <h3><img class="logo" :src="contact.logo"><a v-bind:href="contact.link" target="_blank">{{ contact.text }}</a></h3>
         </div>
       </div>
     </div>
