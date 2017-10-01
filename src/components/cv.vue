@@ -186,6 +186,9 @@ export default {
     img.logo {
       display: none;
     }
+    .jumbotron {
+      min-height: 150px;
+    }
   }
 
   /* col-sm and up */

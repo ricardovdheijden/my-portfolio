@@ -152,4 +152,10 @@ export default {
     cursor: pointer;
     cursor: hand;
   }
+
+  @media (max-width: 767px) {
+    .jumbotron {
+      min-height: 150px;
+    }
+  }
 </style>
