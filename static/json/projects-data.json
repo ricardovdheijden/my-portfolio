@@ -21,7 +21,7 @@
         "static/img/abn-amro-company-logo.png"
       ]
     },{
-      "name": "Van meten naar weten",
+      "name": "Van Meten Naar Weten",
       "company": "Sportinnovator",
       "website": {
         "url": "https://sportinnovator.nl/projects/van-meten-naar-weten",
@@ -42,7 +42,7 @@
       ]
     }
   ],
-  "side": [
+  "others": [
     {
       "name": "My-Portfolio",
       "company": "",

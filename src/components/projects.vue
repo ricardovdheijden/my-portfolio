@@ -8,7 +8,7 @@
 
     <div class="container">
       <div class="professional project-section container row">
-        <h2>Professional projects</h2>
+        <h2>Professional</h2>
         <div v-for="project in projectsData.professional">
           <div class="col-sm-4 project" v-on:click="showDetails(project)">
             <img class="logo" :src="project.images[0]">
@@ -23,8 +23,8 @@
       </div>
 
       <div class="side project-section container row">
-        <h2>Side projects</h2>
-        <div v-for="project in projectsData.side">
+        <h2>Others</h2>
+        <div v-for="project in projectsData.others">
           <div class="col-sm-4 project" v-on:click="showDetails(project)">
             <img class="logo" :src="project.images[0]">
             <div class="row col-sm-11 project-details">
@@ -54,15 +54,15 @@
                 <td><a v-bind:href="projectDetails.website.url" target="_blank">{{ projectDetails.website.name }}</a></td>
               </tr>
               <tr v-if="projectDetails.language">
-                <th>Programming&nbsp;language:</th>
+                <th>Programming&nbsp;languages:</th>
                 <td>{{projectDetails.language}}</td>
               </tr>
               <tr>
-                <th>Project status:</th>
+                <th>Project Status:</th>
                 <td><span v-if="projectDetails.finished">Finished</span><span v-else="">In progress</span></td>
               </tr>
               <tr v-if="projectDetails.sourceCode.url">
-                <th>Source code:</th>
+                <th>Source Code:</th>
                 <td><a v-bind:href="projectDetails.sourceCode.url" target="_blank">{{ projectDetails.sourceCode.name }}</a></td>
               </tr>
             </table>
