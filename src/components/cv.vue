@@ -2,7 +2,7 @@
   <div class="cv">
     <div class="jumbotron">
       <div class="container">
-        <h1>{{cvData.personal.name}}</h1>
+        <h1>Curriculum Vitae</h1>
       </div>
     </div>
 
@@ -83,22 +83,9 @@
       <div class="interests-hobbies cv-section">
         <h2>Interests & Hobbies</h2>
         <div class="container row">
-          <div class="container type">
-            <strong>IT related</strong>
-          </div>
           <div class="container">
             <ul>
-              <li v-for="interest in cvData.interestsHobbies.it">{{interest}}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="container row">
-          <div class="container type">
-            <strong>Non IT related</strong>
-          </div>
-          <div class="container">
-            <ul>
-              <li v-for="interest in cvData.interestsHobbies.nonIt">{{interest}}</li>
+              <li v-for="interest in cvData.interestsHobbies">{{interest}}</li>
             </ul>
           </div>
         </div>
