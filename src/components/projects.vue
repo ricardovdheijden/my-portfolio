@@ -52,25 +52,29 @@
           </div>
           <div class="col-sm-12">
             <table class="table">
-              <tr v-if="projectDetails.company">
+              <tr>
                 <th class="col-xs-2">Company:</th>
-                <td>{{projectDetails.company}}</td>
+                <td v-if="projectDetails.company">{{projectDetails.company}}</td>
+                <td v-else="">-</td>
               </tr>
-              <tr v-if="projectDetails.website.url">
+              <tr>
                 <th class="col-xs-2">Website:</th>
-                <td><a v-bind:href="projectDetails.website.url" target="_blank">{{ projectDetails.website.name }}</a></td>
+                <td v-if="projectDetails.website.url"><a v-bind:href="projectDetails.website.url" target="_blank">{{ projectDetails.website.name }}</a></td>
+                <td v-else="">-</td>
               </tr>
-              <tr v-if="projectDetails.language">
+              <tr>
                 <th class="col-xs-2">Programming&nbsp;languages:</th>
-                <td>{{projectDetails.language}}</td>
+                <td v-if="projectDetails.language">{{projectDetails.language}}</td>
+                <td v-else="">-</td>
               </tr>
               <tr>
                 <th class="col-xs-2">Project Status:</th>
                 <td><span v-if="projectDetails.finished">Finished</span><span v-else="">In progress</span></td>
               </tr>
-              <tr v-if="projectDetails.sourceCode.url">
+              <tr>
                 <th class="col-xs-2">Source Code:</th>
-                <td><a v-bind:href="projectDetails.sourceCode.url" target="_blank">{{ projectDetails.sourceCode.name }}</a></td>
+                <td v-if="projectDetails.sourceCode.url"><a v-bind:href="projectDetails.sourceCode.url" target="_blank">{{ projectDetails.sourceCode.name }}</a></td>
+                <td v-else="">-</td>
               </tr>
             </table>
           </div>
@@ -138,6 +142,7 @@ export default {
     margin-bottom: 10px;
   }
   table {
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   table th,
