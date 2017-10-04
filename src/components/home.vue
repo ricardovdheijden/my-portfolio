@@ -52,6 +52,7 @@ export default {
   /* col-xs only */
   @media (max-width: 767px) {
     .home {
+      font-size: 17px;
       margin-top: 0;
     }
     h1 {
