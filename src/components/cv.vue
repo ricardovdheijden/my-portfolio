@@ -23,6 +23,23 @@
               <li v-for="summaryLine in work.summary">{{summaryLine}}</li>
             </ul>
           </div>
+          <div class="projects">
+            <div v-for="project in work.projects" class="row col-sm-12">
+              <div class="row col-sm-1">
+                <img class="logo" :src="project.logo">
+              </div>
+              <div class="row col-sm-4 col-md-3">
+                <span class="col-xs-5 col-sm-12"><strong>{{project.company}}</strong></span>
+                <span class="col-xs-7 col-sm-12 work-title text-right"><em>{{project.title}}</em></span>
+                <span class="col-xs-12">{{monthName(project.startMonth)}} {{project.startYear}} - <span v-if="project.endYear">{{monthName(project.endMonth)}} {{project.endYear}}</span><span v-else>Present</span></span>
+              </div>
+              <div class="summary-line col-sm-7 col-md-8">
+                <ul>
+                  <li v-for="summaryLine in project.summary">{{summaryLine}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -142,21 +159,17 @@ export default {
     min-height: 350px;
    background-size: cover;
   }
-
   .jumbotron > .container {
     color: white;
   }
-
   .work-experience.cv-section > .row,
   .education.cv-section > .row {
     margin-bottom: 20px;
   }
-
   .certifications-skills.cv-section > .row,
   .interests-hobbies.cv-section > .row {
     margin-bottom: 10px;
   }
-
   .cv-section {
     margin-bottom: 40px;
   }
@@ -176,6 +189,9 @@ export default {
     .jumbotron {
       min-height: 150px;
     }
+    .projects {
+      margin-left: 20px;
+    }
   }
 
   /* col-sm and up */
@@ -185,11 +201,15 @@ export default {
       width: 35px;
       height: 35px;
     }
-
+    .projects {
+      margin-left: 45px;
+    }
+    .projects > .row {
+      margin-top: 20px;
+    }
     .work-title.text-right {
       text-align:left;
     }
-
     .certifications-skills ul,
     .interests-hobbies ul {
       padding-left: 31px;
@@ -202,7 +222,9 @@ export default {
       width: 50px;
       height: 50px;
     }
-
+    .projects {
+      margin-left: 65px;
+    }
     .certifications-skills ul,
     .interests-hobbies ul {
       padding-left: 49px;
@@ -211,6 +233,9 @@ export default {
 
   /* col-lg and up */
   @media (min-width: 1200px) {
+    .projects {
+      margin-left: 80px;
+    }
     .certifications-skills ul,
     .interests-hobbies ul {
       padding-left: 65px;
