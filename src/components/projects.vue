@@ -50,7 +50,7 @@
               {{paragraph}}
             </p>
           </div>
-          <div class="col-sm-12">
+          <div class="details col-sm-12">
             <table class="table">
               <tr>
                 <th class="col-xs-2">Company:</th>
@@ -160,6 +160,9 @@ export default {
   @media (max-width: 767px) {
     .jumbotron {
       min-height: 150px;
+    }
+    .details {
+      padding-left: 0;
     }
   }
 </style>

@@ -45,7 +45,7 @@ export default {
   }
   @media (min-height: 750px) {
     .home {
-      margin-top: calc(50vh - 260px - 60px);
+      margin-top: calc(50vh - 244px - 60px); /* [% view-height] - [image-height / 2] - [footer-height]*/
     }
   }
 
