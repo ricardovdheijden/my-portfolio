@@ -4,5 +4,8 @@
     "I’m a software developer and I’m passionate about all things technology and computer science.",
     "I constantly work on new solutions to improve business processes while keeping the user experience as the thrust of my work."
   ],
-  "image": "static/img/ricardo-van-der-heijden.png"
+  "image": {
+    "file": "static/img/ricardo-van-der-heijden.png",
+    "placeholder": "static/img/small/ricardo-van-der-heijden.png"
+  }
 }

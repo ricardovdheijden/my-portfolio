@@ -2,7 +2,11 @@
   <div class="container">
     <div class="home row row-eq-height">
       <div class="col-sm-4 image">
-        <img class="logo" :src="homeData.image">
+        <!--<img class="logo" :src="homeData.image.file">-->
+        <progressive-img
+          :src="homeData.image.file"
+          :placeholder="homeData.image.placeholder">
+        </progressive-img>
       </div>
       <div class="col-sm-8 introduction">
         <h1>{{homeData.title}}</h1>

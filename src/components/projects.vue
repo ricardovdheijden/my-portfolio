@@ -11,7 +11,11 @@
         <h2>Professional</h2>
         <div v-for="project in projectsData.professional">
           <div class="col-sm-4 project" v-on:click="showDetails(project)">
-            <img class="logo" :src="project.images[0]">
+            <!--<img class="logo" :src="project.images[0]">-->
+            <progressive-img class="logo"
+              :src="project.images[0].file"
+              :placeholder="project.images[0].placeholder">
+            </progressive-img>
             <div class="row col-sm-11">
               <ul class="list-unstyled">
                 <li>{{project.name}}</li>
@@ -26,7 +30,11 @@
         <h2>Others</h2>
         <div v-for="project in projectsData.others">
           <div class="col-sm-4 project" v-on:click="showDetails(project)">
-            <img class="logo" :src="project.images[0]">
+            <!--<img class="logo" :src="project.images[0]">-->
+            <progressive-img class="logo"
+              :src="project.images[0].file"
+              :placeholder="project.images[0].placeholder">
+            </progressive-img>
             <div class="row col-sm-11 project-details">
               <ul class="list-unstyled">
                 <li>{{project.name}}</li>
@@ -39,10 +47,10 @@
 
       <bootstrap-modal ref="projectDetails" size="large">
         <div slot="title">{{projectDetails.name}}</div>
-        <div slot="body" class="row">
+        <div slot="body" class="row" v-if="projectDetails.images">
           <div class="col-sm-12">
             <div class="col-sm-offset-1 col-sm-10">
-              <img class="logo" :src="projectDetails.images[0]">
+              <img class="logo" :src="projectDetails.images[0].file">
             </div>
           </div>
           <div class="col-sm-12">
@@ -137,7 +145,7 @@ export default {
   .jumbotron > .container {
     color: white;
   }
-  img {
+  progressive-img {
     width: 100%;
     margin-bottom: 10px;
   }

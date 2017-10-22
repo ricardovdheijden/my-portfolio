@@ -17,7 +17,10 @@
         "name": ""
       },
       "images": [
-        "static/img/abn-amro-company-logo.png"
+        {
+          "file": "static/img/abn-amro-company-logo.png",
+          "placeholder": "static/img/small/abn-amro-company-logo.png"
+        }
       ]
     },{
       "name": "Van Meten Naar Weten",
@@ -36,7 +39,10 @@
         "name": ""
       },
       "images": [
-        "static/img/van-meten-naar-weten.png"
+        {
+          "file": "static/img/van-meten-naar-weten.png",
+          "placeholder": "static/img/small/van-meten-naar-weten.png"
+        }
       ]
     }
   ],
@@ -59,7 +65,10 @@
         "name": "GitHub - My-Portfolio"
       },
       "images": [
-        "static/img/my-portfolio.png"
+        {
+          "file": "static/img/my-portfolio.png",
+          "placeholder": "static/img/small/my-portfolio.png"
+        }
       ]
     }, {
       "name": "Kodi On iMon",
@@ -78,7 +87,10 @@
         "name": "GitHub - Kodi-on-iMon"
       },
       "images": [
-        "static/img/kodi-on-imon.png"
+        {
+          "file": "static/img/kodi-on-imon.png",
+          "placeholder": "static/img/small/kodi-on-imon.png"
+        }
       ]
     }, {
       "name": "Topic Vote",
@@ -97,7 +109,10 @@
         "name": "GitHub - Topic-Vote"
       },
       "images": [
-        "static/img/topic-vote.png"
+        {
+          "file": "static/img/topic-vote.png",
+          "placeholder": "static/img/small/topic-vote.png"
+        }
       ]
     }
   ]
