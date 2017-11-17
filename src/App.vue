@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <mp-navigation></mp-navigation>
+    <my-portfolio-navigation></my-portfolio-navigation>
     <router-view class="view"></router-view>
-    <mp-footer></mp-footer>
+    <my-portfolio-footer></my-portfolio-footer>
   </div>
 </template>
 

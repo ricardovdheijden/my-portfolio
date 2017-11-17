@@ -5,11 +5,11 @@ import Vue from 'vue'
 import App from './App'
 import { store } from './store'
 import router from './router'
-import mpNavigation from './components/mp-navigation.vue'
-import mpFooter from './components/mp-footer.vue'
+import myPortfolioNavigation from './components/my-portfolio-navigation.vue'
+import myPortfolioFooter from './components/my-portfolio-footer.vue'
 
-Vue.component('mp-navigation', mpNavigation)
-Vue.component('mp-footer', mpFooter)
+Vue.component('my-portfolio-navigation', myPortfolioNavigation)
+Vue.component('my-portfolio-footer', myPortfolioFooter)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

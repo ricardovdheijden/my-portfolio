@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import cv from '@/components/cv'
-import projects from '@/components/projects'
-import home from '@/components/home'
-import contact from '@/components/contact'
+import cv from '@/pages/cv'
+import projects from '@/pages/projects'
+import home from '@/pages/home'
+import contact from '@/pages/contact'
 
 Vue.use(Router)
 
