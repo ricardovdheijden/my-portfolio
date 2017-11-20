@@ -91,7 +91,7 @@
 <script>
   import bootstrapModal from 'vue2-bootstrap-modal'
   export default {
-    name: 'projects',
+    name: 'projectsOverview',
     props: [
       'projectsData'
     ],

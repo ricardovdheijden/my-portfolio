@@ -1,10 +1,10 @@
 <template>
-  <project-overview :projectsData="projectsData"></project-overview>
+  <projects-overview :projectsData="projectsData"></projects-overview>
 </template>
 
 <script>
   import axios from 'axios'
-  import projectOverview from '../components/project-overview.vue'
+  import projectsOverview from '../components/projects-overview.vue'
 
   export default {
     data () {
@@ -21,7 +21,7 @@
         })
     },
     components: {
-      'project-overview': projectOverview
+      'projects-overview': projectsOverview
     }
   }
 </script>
