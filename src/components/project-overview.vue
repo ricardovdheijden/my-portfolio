@@ -89,13 +89,14 @@
 </template>
 
 <script>
-  import axios from 'axios'
   import bootstrapModal from 'vue2-bootstrap-modal'
   export default {
     name: 'projects',
+    props: [
+      'projectsData'
+    ],
     data () {
       return {
-        projectsData: {},
         projectDetails: {
           title: '',
           company: '',
@@ -107,13 +108,6 @@
           images: ''
         }
       }
-    },
-    mounted () {
-      let self = this
-      axios.get('static/json/projects-data.json')
-        .then(function (response) {
-          self.projectsData = response.data
-        })
     },
     methods: {
       showDetails: function (project) {
