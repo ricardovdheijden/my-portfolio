@@ -2,7 +2,7 @@
   <div class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#" v-on:click="mobileNavOpen = false">Ricardo van der Heijden</a>
+        <a class="navbar-brand" href="#/" v-on:click="mobileNavOpen = false">Ricardo van der Heijden</a>
         <a class="btn btn-default btn-lg mobile-nav-toggle" v-on:click="mobileNavOpen = !mobileNavOpen">
           <span class="glyphicon" :class="{'glyphicon-remove': mobileNavOpen, 'glyphicon-menu-hamburger': !mobileNavOpen}"></span>
         </a>

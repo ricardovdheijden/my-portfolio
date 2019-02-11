@@ -28,7 +28,7 @@ export default new Router({
     }, {
       path: '/',
       name: 'default',
-      component: home
+      redirect: '/home'
     }
   ]
 })
