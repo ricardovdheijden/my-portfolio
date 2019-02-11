@@ -42,26 +42,6 @@
   ],
   "others": [
     {
-      "name": "My Portfolio",
-      "company": "",
-      "website": {
-        "url": "",
-        "name": ""
-      },
-      "language": "JavaScript, Vue.js, Bootstrap",
-      "finished": false,
-      "description": [
-        "I wanted to create a portfolio website using Vue.js that is suited for single-page applications and have a clear separation between content and functionality.",
-        "My Portfolio is created using Vue.js 2.0 and the Bootstrap framework, with all content is stored in json files."
-      ],
-      "sourceCode": {
-        "url": "https://github.com/ricardovdheijden/my-portfolio",
-        "name": "GitHub - My-Portfolio"
-      },
-      "images": [
-        "static/img/my-portfolio.png"
-      ]
-    }, {
       "name": "Kodi On iMon",
       "company": "",
       "website": {
@@ -98,6 +78,45 @@
       },
       "images": [
         "static/img/topic-vote.png"
+      ]
+    }, {
+      "name": "My Portfolio",
+      "company": "",
+      "website": {
+        "url": "",
+        "name": ""
+      },
+      "language": "JavaScript, Vue.js, Bootstrap",
+      "finished": true,
+      "description": [
+        "I wanted to create a portfolio website using Vue.js that is suited for single-page applications and have a clear separation between content and functionality.",
+        "My Portfolio is created using Vue.js 2.0 and the Bootstrap framework, with all content stored in json files."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/my-portfolio",
+        "name": "GitHub - My-Portfolio"
+      },
+      "images": [
+        "static/img/my-portfolio.png"
+      ]
+    }, {
+      "name": "GoPro Remote",
+      "company": "",
+      "website": {
+        "url": "",
+        "name": ""
+      },
+      "language": "Java (Android)",
+      "finished": false,
+      "description": [
+        "While traveling, I often get frustrated with the GoPro app (formerly called Capture)'s remote control functionalities so I decided to start creating my own that better suit my needs. These include being able to access the remote control faster, as well as having an option for a countdown timer."
+      ],
+      "sourceCode": {
+        "url": "https://bitbucket.org/ricardovdheijden/gopro-shutter",
+        "name": "Bitbucket - GoPro Remote (Private)"
+      },
+      "images": [
+        "static/img/gopro-remote.png"
       ]
     }
   ]
