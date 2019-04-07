@@ -19,7 +19,7 @@
       "images": [
         "static/img/abn-amro-company-logo.png"
       ]
-    },{
+    }, {
       "name": "Van Meten Naar Weten",
       "company": "Sportinnovator",
       "website": {
@@ -37,6 +37,25 @@
       },
       "images": [
         "static/img/van-meten-naar-weten.png"
+      ]
+    }, {
+      "name": "Payment Service Directive 2",
+      "company": "De Volksbank",
+      "website": {
+        "url": "https://www.snsbank.nl/particulier/service/toegang-betaalrekening.html",
+        "name": "PSD2"
+      },
+      "language": "Java, Spring Boot, JavaScript, AngularJS, Bootstrap",
+      "finished": true,
+      "description": [
+        "This project was for Volksbank’s website to comply with the new Payment Service Directive 2 regulation for banks in Europe. My team implemented the Front-end and the APIs for customers to approve and allow third parties to access account details and transactions."
+      ],
+      "sourceCode": {
+        "url": "",
+        "name": ""
+      },
+      "images": [
+        "static/img/volksbank-psd2.png"
       ]
     }
   ],
