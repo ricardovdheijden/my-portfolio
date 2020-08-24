@@ -19,7 +19,7 @@
       "images": [
         "static/img/abn-amro-company-logo.png"
       ]
-    },{
+    }, {
       "name": "Van Meten Naar Weten",
       "company": "Sportinnovator",
       "website": {
@@ -38,30 +38,29 @@
       "images": [
         "static/img/van-meten-naar-weten.png"
       ]
+    }, {
+      "name": "Payment Service Directive 2",
+      "company": "De Volksbank",
+      "website": {
+        "url": "https://www.snsbank.nl/particulier/service/toegang-betaalrekening.html",
+        "name": "PSD2"
+      },
+      "language": "Java, Spring Boot, JavaScript, AngularJS, Bootstrap",
+      "finished": true,
+      "description": [
+        "This project was for Volksbank’s website to comply with the new Payment Service Directive 2 regulation for banks in Europe. My team implemented the Front-end and the APIs for customers to approve and allow third parties to access account details and transactions."
+      ],
+      "sourceCode": {
+        "url": "",
+        "name": ""
+      },
+      "images": [
+        "static/img/volksbank-psd2.png"
+      ]
     }
   ],
   "others": [
     {
-      "name": "My Portfolio",
-      "company": "",
-      "website": {
-        "url": "",
-        "name": ""
-      },
-      "language": "JavaScript, Vue.js, Bootstrap",
-      "finished": false,
-      "description": [
-        "I wanted to create a portfolio website using Vue.js that is suited for single-page applications and have a clear separation between content and functionality.",
-        "My Portfolio is created using Vue.js 2.0 and the Bootstrap framework, with all content is stored in json files."
-      ],
-      "sourceCode": {
-        "url": "https://github.com/ricardovdheijden/my-portfolio",
-        "name": "GitHub - My-Portfolio"
-      },
-      "images": [
-        "static/img/my-portfolio.png"
-      ]
-    }, {
       "name": "Kodi On iMon",
       "company": "",
       "website": {
@@ -98,6 +97,64 @@
       },
       "images": [
         "static/img/topic-vote.png"
+      ]
+    }, {
+      "name": "My Portfolio",
+      "company": "",
+      "website": {
+        "url": "",
+        "name": ""
+      },
+      "language": "JavaScript, Vue.js, Bootstrap",
+      "finished": true,
+      "description": [
+        "I wanted to create a portfolio website using Vue.js that is suited for single-page applications and have a clear separation between content and functionality.",
+        "My Portfolio is created using Vue.js 2.0 and the Bootstrap framework, with all content stored in json files."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/my-portfolio",
+        "name": "GitHub - My-Portfolio"
+      },
+      "images": [
+        "static/img/my-portfolio.png"
+      ]
+    }, {
+      "name": "GoPro Remote",
+      "company": "",
+      "website": {
+        "url": "",
+        "name": ""
+      },
+      "language": "Java (Android)",
+      "finished": false,
+      "description": [
+        "While traveling, I often get frustrated with the GoPro app (formerly called Capture)'s remote control functionalities so I decided to start creating my own that better suit my needs. These include being able to access the remote control faster, as well as having an option for a countdown timer."
+      ],
+      "sourceCode": {
+        "url": "https://bitbucket.org/ricardovdheijden/gopro-shutter",
+        "name": "Bitbucket - GoPro Remote (Private)"
+      },
+      "images": [
+        "static/img/gopro-remote.png"
+      ]
+    }, {
+      "name": "Playlist Manager",
+      "company": "",
+      "website": {
+        "url": "https://playlist-manager.ricardovdheijden.nl",
+        "name": "Playlist-Manager"
+      },
+      "language": "JavaScript, React, Bootstrap",
+      "finished": false,
+      "description": [
+        ""
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/playlist-manager",
+        "name": "Github - Playlist-Manager"
+      },
+      "images": [
+        "static/img/playlist-manager.png"
       ]
     }
   ]
