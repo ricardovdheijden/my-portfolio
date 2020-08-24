@@ -137,6 +137,25 @@
       "images": [
         "static/img/gopro-remote.png"
       ]
+    }, {
+      "name": "Playlist Manager",
+      "company": "",
+      "website": {
+        "url": "https://playlist-manager.ricardovdheijden.nl",
+        "name": "Playlist-Manager"
+      },
+      "language": "JavaScript, React, Bootstrap",
+      "finished": false,
+      "description": [
+        ""
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/playlist-manager",
+        "name": "Github - Playlist-Manager"
+      },
+      "images": [
+        "static/img/playlist-manager.png"
+      ]
     }
   ]
 }
