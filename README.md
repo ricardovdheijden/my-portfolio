@@ -2,6 +2,8 @@
 
 > A single page application to show CV and showcase projects
 
+Node version: `v12.18.0`
+
 ## Build Setup
 
 ``` bash
