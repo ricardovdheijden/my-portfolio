@@ -152,7 +152,14 @@ export default {
   .project-section .project {
     margin-bottom: 20px;
     cursor: pointer;
-    cursor: hand;
+  }
+
+  .professional.project-section .project {
+    height: 350px;
+  }
+
+  .side.project-section .project {
+    height: 400px;
   }
 
   /* Bootstrap grid adjustments */
@@ -164,5 +171,38 @@ export default {
     .details {
       padding-left: 0;
     }
+
+    .professional.project-section .project {
+      height: auto;
+    }
+
+    .side.project-section .project {
+      height: auto;
+      margin-bottom: 30px;
+    }
   }
+
+  /* col-sm */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .professional.project-section .project {
+      height: 250px;
+    }
+
+    .side.project-section .project {
+      height: 260px;
+    }
+  }
+
+  /* col-md */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .professional.project-section .project {
+      height: 300px;
+    }
+
+    .side.project-section .project {
+      height: 340px;
+    }
+  }
+
+  /* col-lg: the default is already assuming col-lg */
 </style>

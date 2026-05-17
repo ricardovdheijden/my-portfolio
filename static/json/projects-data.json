@@ -1,23 +1,42 @@
 {
   "professional": [
     {
-      "name": "Company Logos",
-      "company": "ABN AMRO",
+      "name": "Workflow Orchestrator",
+      "company": "SURF",
       "website": {
-        "url": "https://www.abnamro.nl/nl/grootzakelijk/producten/cash-management/betalen/internetbankieren/mogelijkheden/bedrijfslogo-toevoegen.html",
-        "name": "ABN AMRO Company Logo"
+        "url": "https://wfo-ui.vercel.app",
+        "name": "Workflow Orchestrator (Demo)"
       },
-      "language": "JavaScript, AngularJS, Bootstrap",
+      "language": "Nextjs, React, TypeScript, CSS-in-JS, GraphQL, Storybook, Turborepo",
       "finished": true,
       "description": [
-        "Built a widget to enable corporate internet banking clients to upload their company logos onto their profile and integrated it into the existing internet banking application."
+        "This project was for Volksbank’s website to comply with the new Payment Service Directive 2 regulation for banks in Europe. My team implemented the Front-end and the APIs for customers to approve and allow third parties to access account details and transactions."
+      ],
+      "sourceCode": {
+        "url": "https://github.com/ricardovdheijden/orchestrator-ui",
+        "name": "GitHub - Orchestrator-UI Library"
+      },
+      "images": [
+        "static/img/volksbank-psd2.png"
+      ]
+    }, {
+      "name": "Payment Service Directive 2",
+      "company": "De Volksbank",
+      "website": {
+        "url": "https://www.snsbank.nl/particulier/service/toegang-betaalrekening.html",
+        "name": "PSD2"
+      },
+      "language": "Java, Spring Boot, JavaScript, AngularJS, Bootstrap",
+      "finished": true,
+      "description": [
+        "This project was for Volksbank’s website to comply with the new Payment Service Directive 2 regulation for banks in Europe. My team implemented the Front-end and the APIs for customers to approve and allow third parties to access account details and transactions."
       ],
       "sourceCode": {
         "url": "",
         "name": ""
       },
       "images": [
-        "static/img/abn-amro-company-logo.png"
+        "static/img/volksbank-psd2.png"
       ]
     }, {
       "name": "Van Meten Naar Weten",
@@ -39,23 +58,23 @@
         "static/img/van-meten-naar-weten.png"
       ]
     }, {
-      "name": "Payment Service Directive 2",
-      "company": "De Volksbank",
+      "name": "Company Logos",
+      "company": "ABN AMRO",
       "website": {
-        "url": "https://www.snsbank.nl/particulier/service/toegang-betaalrekening.html",
-        "name": "PSD2"
+        "url": "https://www.abnamro.nl/nl/grootzakelijk/producten/cash-management/betalen/internetbankieren/mogelijkheden/bedrijfslogo-toevoegen.html",
+        "name": "ABN AMRO Company Logo"
       },
-      "language": "Java, Spring Boot, JavaScript, AngularJS, Bootstrap",
+      "language": "JavaScript, AngularJS, Bootstrap",
       "finished": true,
       "description": [
-        "This project was for Volksbank’s website to comply with the new Payment Service Directive 2 regulation for banks in Europe. My team implemented the Front-end and the APIs for customers to approve and allow third parties to access account details and transactions."
+        "Built a widget to enable corporate internet banking clients to upload their company logos onto their profile and integrated it into the existing internet banking application."
       ],
       "sourceCode": {
         "url": "",
         "name": ""
       },
       "images": [
-        "static/img/volksbank-psd2.png"
+        "static/img/abn-amro-company-logo.png"
       ]
     }
   ],
