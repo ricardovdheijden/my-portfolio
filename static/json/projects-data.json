@@ -5,7 +5,7 @@
       "company": "SURF",
       "website": {
         "url": "https://wfo-ui.vercel.app",
-        "name": "Workflow Orchestrator (Front-End Demo)"
+        "name": "Workflow Orchestrator - Front-End Demo (Desktop only)"
       },
       "language": "Nextjs, React, TypeScript, CSS-in-JS, GraphQL, Storybook, Turborepo",
       "finished": true,
